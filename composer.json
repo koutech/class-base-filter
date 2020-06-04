@@ -1,0 +1,19 @@
+{
+    "name": "koutech/class-base-filter",
+    "description": "Top layer for spatie-query-builder with class base filter and other featuer too.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Koutech",
+            "email": "koutech9@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Koutech\\TopLayerForSpatieQueryBuilder\\" : "src/"
+        }
+    }
+}
