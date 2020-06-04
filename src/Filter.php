@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Koutech\TopLayerForSpatieQueryBuilder\FilterMode;
 use Koutech\TopLayerForSpatieQueryBuilder\FilterAbstract;
 use Koutech\TopLayerForSpatieQueryBuilder\FilterEloquent;
+use Koutech\TopLayerForSpatieQueryBuilder\Traits\FilterEss;
 use Koutech\TopLayerForSpatieQueryBuilder\Traits\FilterPart;
 use Koutech\TopLayerForSpatieQueryBuilder\Traits\RequestNot;
 use Koutech\TopLayerForSpatieQueryBuilder\Traits\FilterQuery;
@@ -15,7 +16,7 @@ use Koutech\TopLayerForSpatieQueryBuilder\Traits\FilterCallable;
 class Filter extends FilterAbstract implements FilterEloquent, FilterMode
 {
 
-    use FilterPart, RequestNot, FilterCallable, FilterQuery;
+    use FilterPart, RequestNot, FilterCallable, FilterQuery, FilterEss;
     
 
     /**
@@ -146,21 +147,7 @@ class Filter extends FilterAbstract implements FilterEloquent, FilterMode
 
 
 
-    public function includes() 
-    {
-        return  [];
-    }
-
-    public function fields() 
-    {
-        return [];
-    }
-
-
-    public function eagerLoading() 
-    {
-        return [];
-    }
+    
     
     
 }
