@@ -111,6 +111,7 @@ class Filter extends FilterAbstract implements FilterEloquent, FilterMode
      */
     protected function buildProcess() 
     {
+        // building staffs for call
         $this->buildStaffs();
 
         $this->loadQuery();
