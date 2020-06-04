@@ -126,7 +126,7 @@ class Filter extends FilterAbstract implements FilterEloquent, FilterMode
     }
 
     /**
-     * check requirement
+     * check requirement exsits
      * 
      * @return bool
      */
