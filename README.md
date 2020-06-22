@@ -8,7 +8,7 @@ __Class Base Filter__
 - Create Some class e.g UserFilter.php
 
 
-## Inside Class 
+## Inside Filter Class 
 
 __all you have to do is just extend the `Koutech\TopLayerForSpatieQueryBuilder\Filter`__
 __contain at least two methods `fields` and `model` inside class__
@@ -19,6 +19,7 @@ __contain at least two methods `fields` and `model` inside class__
 namespace App\Filter;
 
 use Koutech\TopLayerForSpatieQueryBuilder\Filter;
+
 use App\User;
 
 
@@ -37,6 +38,17 @@ class UserFilter extends Filter
 
 
 }
+```
+
+
+## Usage
+
+
+```php
+<?php
+
+$users = UserFilter::filter()->get();
+
 ```
 
 ## Set Eager Loading 
