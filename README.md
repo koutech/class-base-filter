@@ -1,6 +1,8 @@
-## How to use
+## Installation
 
-- Clone the repository with __git clone__
+```sh
+composer require koutech/class-base-filter
+```
 
 __Class Base Filter__
 
